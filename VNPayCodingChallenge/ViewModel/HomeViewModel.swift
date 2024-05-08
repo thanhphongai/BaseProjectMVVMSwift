@@ -28,18 +28,8 @@ class HomeViewModel: BaseViewModel {
 extension HomeViewModel {
     
     private func fetchUserData() {
-//        let dispatchGroup = DispatchGroup()
-//
-//        dispatchGroup.enter()
         getUserList()
-//        dispatchGroup.leave()
-//        dispatchGroup.enter()
         getPostList()
-//        dispatchGroup.leave()
-//
-//        dispatchGroup.notify(queue: .main) {
-//            print("Done")
-//        }
     }
 
     private func getPostList(completion: @escaping (Bool) -> Void) {
